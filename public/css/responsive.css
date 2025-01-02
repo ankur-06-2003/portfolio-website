@@ -93,6 +93,9 @@
         width: 100%;
         background-color: #c5c5c5;
     }
+    .flip-card{
+        display: block;
+    }
     #contact-div-1 {
         display: none;
         width: 80%;

@@ -182,12 +182,12 @@
         <p id="mob-no" class="contact-detail">Mob : +91 8950605155</p>
         <p id="email" class="contact-detail">Email : ankuryadav8802@gmail.com</p>
         <div class="contact-link">
-            <div id="insta" ><a href="#" class="fa-brands fa-instagram fa-2xl"> </a></div>
+            <div id="insta" ><a href="https://www.instagram.com/itz_ankur_2003/" class="fa-brands fa-instagram fa-2xl"> </a></div>
             <div id="linked-in" >
-                <a href="#" class="fa-brands fa-linkedin fa-2xl"></a>
+                <a href="https://www.linkedin.com/in/ankur-08635a284/" class="fa-brands fa-linkedin fa-2xl"></a>
             </div>
-            <div id="insta" > 
-                <a href="#" class="fa-brands fa-github fa-2xl"></a>
+            <div id="github" > 
+                <a href="https://github.com/ankur-06-2003" class="fa-brands fa-github fa-2xl"></a>
             </div>
         </div></div>
         <div id="contact-input">
@@ -216,27 +216,27 @@
             <p>Any exciting project? react me out. </p>
         </div>
         <div class="contact-link-800">
-            <div id="insta"  class="social-link"><a href="#" class="fa-brands fa-instagram fa-m"  style="color: #fff;"> </a></div>
+            <div id="insta"  class="social-link"><a href="https://www.instagram.com/itz_ankur_2003/" class="fa-brands fa-instagram fa-m"  style="color: #fff;"> </a></div>
             <div id="linked-in" class="social-link">
-                <a href="#" class="fa-brands fa-linkedin fa-m" style="color: #fff;"></a>
+                <a href="https://www.linkedin.com/in/ankur-08635a284/" class="fa-brands fa-linkedin fa-m" style="color: #fff;"></a>
             </div>
-            <div id="insta" class="social-link"> 
-                <a href="#" class="fa-brands fa-github fa-m" style="color: #fff;"></a>
+            <div id="github" class="social-link"> 
+                <a href="https://github.com/ankur-06-2003" class="fa-brands fa-github fa-m" style="color: #fff;"></a>
             </div>
         </div>
         <div id="contact-800-detail">
             <div id="mail" class="c8d">
-                <a href="#" > <div id="mail-link"><i class="fa-solid fa-envelope"  style="color: #fff;"></i> ankuryadav8802@gmail.com</div></a>
+            <div id="mail-link"><i class="fa-solid fa-envelope"  style="color: #fff;"></i> ankuryadav8802@gmail.com</div>
             </div>
             <div id="phone" class="c8d">
-                <a href="#" > <div id="phone-link"><i class="fa-solid fa-phone" style="color: #fff;"></i> +91 8950605155</div></a>
+                 <div id="phone-link"><i class="fa-solid fa-phone" style="color: #fff;"></i> +91 8950605155</div>
             </div>
         </div>
         <button id="send-msg-2" onclick="showContactInput()" class="btn btn-dark">Send</button>
      </div>
-     <div id="contact-input-800">
+     <div id="contact-input-800" >
         <div id="contact-div-1">
-            <form action="/message" method="post">
+            <form action="/message" method="post" id="form-1">
         <input type="text" class="contact-02" name="name"  id="name" placeholder="Name"><br>
         <input type="number" class="contact-02" name="mobile"  id="P-o" placeholder="Mobile "><br>
         <input type="email" class="contact-02" name="email"  id="Email" placeholder="Email"><br>
@@ -244,9 +244,15 @@
 
          <button type="submit" id="send-msg-2" onclick="showContact800()" class="btn btn-dark">Send</button>
         
-        <button id="cancel-1" onclick="showContact800(), sendEmail()" class="btn btn-dark">Cancel</button>
-    </form>
+        </form>
+         <button id="cancel-1" onclick="showContact800(), sendEmail()" class="btn btn-dark">Cancel</button>
     </div></div></div></div>
-     <script src="/js/main.js" ></script>
+     <script src="/js/main.js" > 
+     if (window.innerWidth<=800){
+        document.querySelector(".flip-card").style.display= "block";
+    }
+    else{
+        document.querySelector(".flip-card").style.display= "none";
+    }</script>
 </body>
 </html>

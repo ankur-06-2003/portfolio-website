@@ -1,3 +1,4 @@
+
 function displayBar(){
     document.querySelector("#bar").style.display="none";
     document.querySelector("#xcross").style.display='block';
@@ -58,3 +59,4 @@ function showContact800(){
     document.querySelector("#contact-800").style.display="block";
     // window.scrollTo(0,1500)
 }
+

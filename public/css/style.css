@@ -318,11 +318,14 @@ color: #0ef;
     left: 78%;
     bottom: 10px;
 }
+.flip-card{
+    display: none;
+}
 #contact-div-1 {
     display: none;
 }
 #cancel-1{
  position: relative;
  left: 0%;
- bottom: 10px;
+ bottom: 46px;
 }
