@@ -1,253 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>my resume</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
-<body>
+
+<body >
     <div id="my-header">
-        <div id="abds">
-        <div class="container">
-            <nav>
-                <img src="/photos/Untitled.png" class="logo" alt="Logo">
-                <ul>
-                   <li ><a href="#">Home  </a></li>
-                   <li onclick="about()"><a href="#">About </a></li>
-                   <li onclick="skill()"><a href="#">Skills</a></li>                  
-                    <li><a href="#">Portfoliio</a></li>
-                    <li onclick="contact()"><a href="#">Contact</a></li>
-                </ul>
-                <div id="bar" onclick="displayBar()"><a href="#" ><i class="fa-solid fa-bars" style="color: #fff;"></i></a></div>
-                <div id="xcross" onclick="CloseBar()"><a href="#" ><i class="fa-solid fa-xmark" style="color: #fff;"></i></a></div>
-            </nav>
-            <div class="header-text">
-                <p>Back-end Web Developer</p>
-                <h1>Hi, I'm <span>Ankur</span> </h1>
-            </div>
-            <a href="#" onclick="contact()"><button id="hiremebtn" class="btn btn-dark">Hire me</button></a>
-        </div>
-    </div>
-    </div>
-    
+        <div id="absd">
+            <div class="container">
+                <nav>
+                    <h1 class="logo">Ankur</h1>
 
-            <!-- -------------about----------- -->
-            <div id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="about-col-1">
-                            <img src="/photos/WhatsApp Image 2024-12-29 at 11.53.48.jpeg">
-                        </div>
-                        <div class="about-col-2">
-                            <h1 class="subtittle">About Me</h1>
-                            <p>Hey there! I'm a MERN stack developer, proficient in MongoDB, Express.js, React, and Node.js. Specializing in end-to-end web development, I excel in building robust and scalable applications that leverage the power of JavaScript across the stack. From crafting interactive user interfaces with React to designing efficient server-side architectures with Node.js.Adept at integrating APIs and optimizing performance for seamless user experiences in full-stack development.</p>
-                            <div class="tab-tittles">
-                                <p class="tab-links  active-link" id="my-skill" onclick="mySkill()">skills</p>
-                                <p class="tab-links" id="my-edu" onclick="edu()">Education</p>
-                            </div>
-                            <div class="tab-contents">
-                                <ul>
-                                    <li><span>python Web Development</span><br>web app Development using python</li>
-                                    <li><span>mern Web Development</span><br>web app Development using mern</li>
-                                </ul>
-                            </div>
-                            <div id="tab-contents-edu">
-                                <ul>
-                                    <li><h2>B.tech (computer science engineering)</h2></li>
-                                    <li><span>from</span></li>
-                                    <li><span><strong>Indira Gandhi University</strong></span></li>
-                                    <li><span><strong>meerpur, Rewari</strong></span></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div id="side-nav">
+                        <ul id="sidebar">
+                            <li id="xcross" onclick="CloseBar()"><a href="#"><i class="fa-solid fa-xmark"
+                                        style="color: #fff;"></i></a></li>
+                            <li><a href="#">Home </a></li>
+                            <li onclick="about()"><a href="#">About </a></li>
+                            <li onclick="skill()"><a href="#">Skills</a></li>
+                            <li><a href="#">Portfoliio</a></li>
+                            <li onclick="contact()"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <ul id="main-nav">
+                        <li class="main-nav-link"><a href="#">Home </a></li>
+                        <li class="main-nav-link" onclick="about()"><a href="#">About </a></li>
+                        <li class="main-nav-link" onclick="skill()"><a href="#">Skills</a></li>
+                        <li class="main-nav-link"><a href="#">Portfoliio</a></li>
+                        <li class="main-nav-link" onclick="contact()"><a href="#">Contact</a></li>
+                        <li id="bar" onclick="displayBar()"><a href="#"><i class="fa-solid fa-bars"
+                                    style="color: #fff;"></i></a></li>
+                    </ul>
 
+                    
+                </nav>
+                <div id="header-center">
+                    <div class="header-text">
+                        <h1>Hi, I'm <span>Ankur</span> </h1>
+                        <p>I'm a <strong>Ankur </strong>based <strong>Full Stack Software
+                                Developer</strong>,Specializing in
+                            MongoDB, Express.js, React, and Node.js, proficient in crafting scalable data solutions,
+                            efficient backends, and dynamic interfaces.</p>
+                        <p>In my free time time, I love to learn new technology and making myself up to date.</p>
+                    </div>
+
+
+                    <div class="contact-link-1">
+                        <div id="insta" class="social-link-1"><a href="https://www.instagram.com/itz_ankur_2003/"
+                                class="fa-brands fa-instagram fa-xl" style="color: #fff;"> </a></div>
+                        <div id="linked-in" class="social-link-1">
+                            <a href="https://www.linkedin.com/in/ankur-08635a284/" class="fa-brands fa-linkedin fa-xl"
+                                style="color: #fff;"></a>
+                        </div>
+                        <div id="github" class="social-link-1">
+                            <a href="https://github.com/ankur-06-2003" class="fa-brands fa-github fa-xl"
+                                style="color: #fff;"></a>
+                        </div>
+                    </div>
+                    <div id="Hire"><a href="#"><button id="download-resume">Resume <i
+                                    class="fa-solid fa-download"></i></button></a>
+                        <a href="#" onclick="contact()"><button id="hiremebtn">Hire me</button></a>
+                    </div>
+                </div>
+                <div id="header-center-1">
+                    <div class="header-text-1">
+                        <h1>Hi, I'm <span>Ankur</span> </h1>
+                        <p>Full Stack Web Developer</p>
+                    </div>
+
+
+                    <div class="contact-link-2">
+                        <div id="insta" class="social-link-1"><a href="https://www.instagram.com/itz_ankur_2003/"
+                                class="fa-brands fa-instagram fa-m" style="color: #fff;"> </a></div>
+                        <div id="linked-in" class="social-link-1">
+                            <a href="https://www.linkedin.com/in/ankur-08635a284/" class="fa-brands fa-linkedin fa-m"
+                                style="color: #fff;"></a>
+                        </div>
+                        <div id="github" class="social-link-1">
+                            <a href="https://github.com/ankur-06-2003" class="fa-brands fa-github fa-m"
+                                style="color: #fff;"></a>
+                        </div>
+                    </div>
+                    <div id="Hire-1"><a href="#"><button id="download-resume-1">Resume <i
+                                    class="fa-solid fa-download"></i></button></a>
+                        <a href="#" onclick="contact()"><button id="hiremebtn-1">Hire me</button></a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- -------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/photos/WhatsApp Image 2024-12-29 at 11.53.48.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtittle">About Me</h1>
+                    <p>Hey there! I'm a MERN stack developer, proficient in MongoDB, Express.js, React, and Node.js.
+                        Specializing in end-to-end web development, I excel in building robust and scalable applications
+                        that leverage the power of JavaScript across the stack. From crafting interactive user
+                        interfaces with React to designing efficient server-side architectures with Node.js.Adept at
+                        integrating APIs and optimizing performance for seamless user experiences in full-stack
+                        development.</p>
+                    <div class="tab-tittles">
+                        <p class="tab-links  active-link" id="my-skill" onclick="mySkill()">skills</p>
+                        <p class="tab-links" id="my-edu" onclick="edu()">Education</p>
+                    </div>
+                    <div class="tab-contents">
+                        <ul>
+                            <li><span>Python Web Development</span></li>
+                            <li id="and">&</li>
+                            <li><span>MERN Web Development</span></li>
+                        </ul>
+                    </div>
+                    <div id="tab-contents-edu">
+                        <ul>
+                            <li>
+                                <h2>B.tech (computer science engineering)</h2>
+                            </li>
+                            <li><span>from</span></li>
+                            <li><span><strong>Indira Gandhi University</strong></span></li>
+                            <li><span><strong>meerpur, Rewari</strong></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- ---------------skill----------------- -->
-    <h1 id="skill-header">skills</h1>
-     <div id="skill-container">
-        
-        <div class="skill"> 
+    <h1 id="skill-header" onpageshow="showProgress()">skills</h1>
+    <div id="skill-container">
+
+        <div class="skill">
             <span id="progress-bar-prcent">90%</span>
             <h6>HTML</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%"></div>
-            
-          </div>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated  html-progress"></div>
+
+            </div>
         </div>
-        <div class="skill"> 
+        <div class="skill">
             <span id="progress-bar-prcent">80%</span>
             <h6>CSS</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
-            
-          </div>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated css-progress"></div>
+
+            </div>
         </div>
-        <div class="skill"> 
+        <div class="skill">
             <span id="progress-bar-prcent">75%</span>
             <h6>Javascript</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
-            
-          </div>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+
+            </div>
         </div>
-        <div class="skill"> 
+        <div class="skill">
             <span id="progress-bar-prcent">70%</span>
-            <h6>bootstrap</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%"></div>
-            
-          </div>
+            <h6>Bootstrap</h6>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated api-progress"></div>
+
+            </div>
         </div>
-        <div class="skill"> 
+        <div class="skill">
             <span id="progress-bar-prcent">70%</span>
-            <h6>node.js</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%"></div>
-            
-          </div>
+            <h6>Node.js</h6>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated api-progress"></div>
+
+            </div>
         </div>
-        <div class="skill"> 
+        <div class="skill">
             <span id="progress-bar-prcent">80%</span>
             <h6>Express</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
-            
-          </div>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated css-progress"></div>
+
+            </div>
         </div>
-        <div class="skill"> 
+        <div class="skill">
             <span id="progress-bar-prcent">85%</span>
             <h6>MongoDB</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%"></div>
-            
-          </div>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%"></div>
+
+            </div>
         </div>
-        <div class="skill"> 
+        <div class="skill">
             <span id="progress-bar-prcent">90%</span>
-            <h6>mysql</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%"></div>
-            
-          </div>
+            <h6>MySQL</h6>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated html-progress"></div>
+
+            </div>
         </div>
-        <div class="skill"> 
+        <div class="skill">
             <span id="progress-bar-prcent">90%</span>
             <h6>Python</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%"></div>
-            
-          </div>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated html-progress"></div>
+
+            </div>
         </div>
         <div class="skill">
             <span id="progress-bar-prcent">80%</span>
             <h6>Djnago</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
-            
-          </div>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated css-progress"></div>
+
+            </div>
         </div>
         <div class="skill">
             <span id="progress-bar-prcent">70%</span>
             <h6>DRF</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%"></div>
-            
-          </div>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated api-progress"></div>
+
+            </div>
         </div>
         <div class="skill">
             <span id="progress-bar-prcent">70%</span>
             <h6>API</h6>
-        <div class="progress col-md-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%"></div>
-            
-          </div>
-        </div>
-    
-     </div>
-     <!-- ----------------contact----------------- -->
-      <div id="contact">
-        <div class="contact-info">
-        <h1 id="contact-header">Have a project? Let's talk</h1>
-        <p id="contact-desc">For inquiries about new or ongoing projects, please feel free to reach out. I'm available to discuss your ideas and assist with your development needs.</p>
-        <p id="mob-no" class="contact-detail">Mob : +91 8950605155</p>
-        <p id="email" class="contact-detail">Email : ankuryadav8802@gmail.com</p>
-        <div class="contact-link">
-            <div id="insta" ><a href="https://www.instagram.com/itz_ankur_2003/" class="fa-brands fa-instagram fa-2xl"> </a></div>
-            <div id="linked-in" >
-                <a href="https://www.linkedin.com/in/ankur-08635a284/" class="fa-brands fa-linkedin fa-2xl"></a>
-            </div>
-            <div id="github" > 
-                <a href="https://github.com/ankur-06-2003" class="fa-brands fa-github fa-2xl"></a>
-            </div>
-        </div></div>
-        <div id="contact-input">
-            <form  method="post" action="/message">
-            <input type="text" class="contact-01" name="name" id="name" placeholder="Name"><br>
-            <input type="number" class="contact-01" name="mobile" id="mobile" placeholder="Mobile"><br>
-            <input type="email" class="contact-01" name="email" id="Email" placeholder="Email"><br>
-             <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message" class="contact-01"></textarea>
+            <div class="progress col-md-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated api-progress"></div>
 
-            <button type="submit" id="send-msg-1" onclick="contact(), sendEmail()" class="btn btn-dark">Send</button>
-        </form>
+            </div>
         </div>
-    
+
+    </div>
+    <!-- ----------------contact----------------- -->
+    <div id="contact">
+        <div class="contact-info">
+            <h1 id="contact-header">Have a project? Let's talk</h1>
+            <p id="contact-desc">For inquiries about new or ongoing projects, please feel free to reach out. I'm
+                available to discuss your ideas and assist with your development needs.</p>
+            <p id="mob-no" class="contact-detail">Mob : +91 8950605155</p>
+            <p id="email" class="contact-detail">Email : ankuryadav8802@gmail.com</p>
+            <div class="contact-link">
+                <div id="insta"><a href="https://www.instagram.com/itz_ankur_2003/"
+                        class="fa-brands fa-instagram fa-2xl"> </a></div>
+                <div id="linked-in">
+                    <a href="https://www.linkedin.com/in/ankur-08635a284/" class="fa-brands fa-linkedin fa-2xl"></a>
+                </div>
+                <div id="github">
+                    <a href="https://github.com/ankur-06-2003" class="fa-brands fa-github fa-2xl"></a>
+                </div>
+            </div>
+        </div>
+        <div id="contact-input">
+            <form method="post" action="/message">
+                <input type="text" class="contact-01" name="name" id="name" placeholder="Name"><br>
+                <input type="number" class="contact-01" name="mobile" id="mobile" placeholder="Mobile"><br>
+                <input type="email" class="contact-01" name="email" id="Email" placeholder="Email"><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"
+                    class="contact-01"></textarea>
+
+                <button type="submit" id="send-msg-1" onclick="contact(), sendEmail()"
+                    class="btn btn-dark">Send</button>
+            </form>
+        </div>
+
     </div>
     <!-- ---------------contact for 800px screen--------------- -->
     <div class="flip-card">
-     <div class="flip-card-inner">
-      <div id="contact-800">
-        <div id="contact-800-header">
-            <h1>Contact Me</h1>
-        </div>
-        <div id="contact-800-desc">
-            <p>For inquiries about new or ongoing projects, please feel free to reach out. I'm available to discuss your ideas and assist with your development needs </p>
-        </div>
-        <div id="contact-800-desc1">
-            <p>Any exciting project? react me out. </p>
-        </div>
-        <div class="contact-link-800">
-            <div id="insta"  class="social-link"><a href="https://www.instagram.com/itz_ankur_2003/" class="fa-brands fa-instagram fa-m"  style="color: #fff;"> </a></div>
-            <div id="linked-in" class="social-link">
-                <a href="https://www.linkedin.com/in/ankur-08635a284/" class="fa-brands fa-linkedin fa-m" style="color: #fff;"></a>
+        <div class="flip-card-inner">
+            <div id="contact-800">
+                <div id="contact-800-header">
+                    <h1>Contact Me</h1>
+                </div>
+                <div id="contact-800-desc">
+                    <p>For inquiries about new or ongoing projects, please feel free to reach out. I'm available to
+                        discuss your ideas and assist with your development needs </p>
+                </div>
+                <div id="contact-800-desc1">
+                    <p>Any exciting project? react me out. </p>
+                </div>
+                <div class="contact-link-800">
+                    <div id="insta" class="social-link"><a href="https://www.instagram.com/itz_ankur_2003/"
+                            class="fa-brands fa-instagram fa-m" style="color: #fff;"> </a></div>
+                    <div id="linked-in" class="social-link">
+                        <a href="https://www.linkedin.com/in/ankur-08635a284/" class="fa-brands fa-linkedin fa-m"
+                            style="color: #fff;"></a>
+                    </div>
+                    <div id="github" class="social-link">
+                        <a href="https://github.com/ankur-06-2003" class="fa-brands fa-github fa-m"
+                            style="color: #fff;"></a>
+                    </div>
+                </div>
+                <div id="contact-800-detail">
+                    <div id="mail" class="c8d">
+                        <div id="mail-link"><i class="fa-solid fa-envelope" style="color: #fff;"></i>
+                            ankuryadav8802@gmail.com</div>
+                    </div>
+                    <div id="phone" class="c8d">
+                        <div id="phone-link"><i class="fa-solid fa-phone" style="color: #fff;"></i> +91 8950605155</div>
+                    </div>
+                </div>
+                <button id="send-msg-2" onclick="showContactInput()" class="btn btn-dark">Send</button>
             </div>
-            <div id="github" class="social-link"> 
-                <a href="https://github.com/ankur-06-2003" class="fa-brands fa-github fa-m" style="color: #fff;"></a>
-            </div>
-        </div>
-        <div id="contact-800-detail">
-            <div id="mail" class="c8d">
-            <div id="mail-link"><i class="fa-solid fa-envelope"  style="color: #fff;"></i> ankuryadav8802@gmail.com</div>
-            </div>
-            <div id="phone" class="c8d">
-                 <div id="phone-link"><i class="fa-solid fa-phone" style="color: #fff;"></i> +91 8950605155</div>
-            </div>
-        </div>
-        <button id="send-msg-2" onclick="showContactInput()" class="btn btn-dark">Send</button>
-     </div>
-     <div id="contact-input-800" >
-        <div id="contact-div-1">
-            <form action="/message" method="post" id="form-1">
-        <input type="text" class="contact-02" name="name"  id="name" placeholder="Name"><br>
-        <input type="number" class="contact-02" name="mobile"  id="P-o" placeholder="Mobile "><br>
-        <input type="email" class="contact-02" name="email"  id="Email" placeholder="Email"><br>
-         <textarea id="message" name="message" rows="3"  placeholder="Enter your message" class="contact-02"></textarea>
+            <div id="contact-input-800">
+                <div id="contact-div-1">
+                    <form action="/message" method="post" id="form-1">
+                        <input type="text" class="contact-02" name="name" id="name" placeholder="Name"><br>
+                        <input type="number" class="contact-02" name="mobile" id="P-o" placeholder="Mobile "><br>
+                        <input type="email" class="contact-02" name="email" id="Email" placeholder="Email"><br>
+                        <textarea id="message" name="message" rows="3" placeholder="Enter your message"
+                            class="contact-02"></textarea>
 
-         <button type="submit" id="send-msg-2" onclick="showContact800()" class="btn btn-dark">Send</button>
-        
-        </form>
-         <button id="cancel-1" onclick="showContact800(), sendEmail()" class="btn btn-dark">Cancel</button>
-    </div></div></div></div>
-     <script src="/js/main.js" >
-      </script>
+                        <button type="submit" id="send-msg-2" onclick="showContact800()"
+                            class="btn btn-dark">Send</button>
+
+                    </form>
+                    <button id="cancel-1" onclick="showContact800(), sendEmail()" class="btn btn-dark">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js">
+    </script>
 </body>
+
 </html>
