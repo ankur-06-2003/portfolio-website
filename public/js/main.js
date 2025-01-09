@@ -10,6 +10,9 @@ function CloseBar(){
     
     
 }
+function removeSidenav(){
+    document.querySelector("#sidebar").style.display="none";
+}
 function mySkill(){
     document.querySelector("#tab-contents-edu").style.display="none";
     let skl=document.querySelector(".tab-contents");

@@ -30,11 +30,11 @@
                         <ul id="sidebar">
                             <li id="xcross" onclick="CloseBar()"><a href="#"><i class="fa-solid fa-xmark"
                                         style="color: #fff;"></i></a></li>
-                            <li><a href="#">Home </a></li>
-                            <li onclick="about()"><a href="#">About </a></li>
-                            <li onclick="skill()"><a href="#">Skills</a></li>
-                            <li><a href="#">Portfoliio</a></li>
-                            <li onclick="contact()"><a href="#">Contact</a></li>
+                            <li><a href="#" onclick="removeSidenav()">Home </a></li>
+                            <li onclick="about() , removeSidenav()"><a href="#">About </a></li>
+                            <li onclick="skill() , removeSidenav()"><a href="#">Skills</a></li>
+                            <li><a href="#" onclick="removeSidenav()">Portfoliio</a></li>
+                            <li onclick="contact(), removeSidenav()"><a href="#">Contact</a></li>
                         </ul>
                     </div>
                     <ul id="main-nav">
